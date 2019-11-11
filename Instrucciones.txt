@@ -1,0 +1,24 @@
+
+html -> en esta raiz mete el index.html que es el acceso a las tres cuentas
+ - admin   || todas las ventanas que interactuan con el administrador
+ - cliente || todas las ventanas que interactuan con el cliente
+ - usuario || todas las ventanas que interactuan con el usuario/cobrador
+
+js -> todos los js que usaremos
+ - clases   || todos los .js las clases con sus metodos
+ - procesos || todos los .js que interactuan con la pagina de forma directa
+
+php -> todos los php que se conectaran con la base de datos
+ extractores  || todos los .php que traen datos de la base de datos
+ inscriptores || todos los .php que almacenan/modifican los datos 
+		  en la base de datos
+
+recursos programacion
+ esta carpeta contendra los diagramas que explican las funcionalidades
+	- diagramas de clase
+	- diagrama de BD
+	- plan del sitio/navegacion
+	- una vez listo el codigo del sql agregare un txt que les genere las tablas en los xxamp
+
+
+si consiferan algo mas agreguemoslo previa discucion
