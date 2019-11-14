@@ -8,15 +8,15 @@ require_once('header.php');
         <h1>Inicia tu sesión</h1>
         <div class="enterbox">
           <div class="w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" class="form">
+            <form class="form">
               <div class="columns-8 w-row">
-                <div class="w-clearfix w-col w-col-6"><label for="name" class="field-label">ID</label></div>
-                <div class="w-col w-col-6"><input type="text" class="text-field w-input" maxlength="256" name="id" data-name="id" id="id"></div>
+                <div class="w-clearfix w-col w-col-6"><label for="name" class="field-label">RUT</label></div>
+                <div class="w-col w-col-6"><input type="text" class="text-field-2 w-input" placeholder="12345678-9" maxlength="10" id="rut"></div>
               </div>
               <div class="w-row">
-                <div class="w-clearfix w-col w-col-6"><label for="email" class="field-label-2">Password</label></div>
-                <div class="w-col w-col-6"><input type="email" class="text-field-2 w-input" maxlength="256" name="password" data-name="password" id="password" required=""></div>
-              </div><input type="submit" value="Iniciar" data-wait="Esperar" class="w-button"></form>
+                <div class="w-clearfix w-col w-col-6"><label for="password" class="field-label-2">Password</label></div>
+                <div class="w-col w-col-6"><input type="password" class="text-field-2 w-input" placeholder="*********" maxlength="50" id="pass" required=""></div>
+              </div><button type="button" onclick="entrar();">Entrar</button></form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
@@ -30,3 +30,20 @@ require_once('header.php');
   <?php
 require_once('footer.php');
 ?>
+
+<script type="text/javascript">
+
+function entrar(){
+
+
+  var primera = document.getElementById("rut").value;
+  var segunda = document.getElementById("pass").value;
+            
+            // Displaying the value
+            alert(primera);
+            alert(segunda);
+  
+}
+  
+
+</script>
