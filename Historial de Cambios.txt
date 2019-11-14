@@ -1,0 +1,8 @@
+v0.0.1
+	- Orden de Carpetas establecido
+	- BD diseñada, ya archivos agregados
+
+v0.0.2
+	- Agregados sitios en formato .php, se dejaran los detalles de como abrir el/los sitios,
+		aun falta la integracion de la navegabilidad, que se esta haciendo
+	- Actualizados archivos de la BD para poder importarlos directamente desde PhPMyAdmin

@@ -20,5 +20,7 @@ recursos programacion
 	- plan del sitio/navegacion
 	- una vez listo el codigo del sql agregare un txt que les genere las tablas en los xxamp
 
+PEGUEN ESTA CARPETA EN C:\xampp\htdocs
+
 
 si consiferan algo mas agreguemoslo previa discucion

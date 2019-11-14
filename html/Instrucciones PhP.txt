@@ -1,0 +1,6 @@
+si bien todos dicen .php son sitios html, se identifican los botones bien y todo el tema
+
+que hacer
+	- la carpeta debe estar localizada en ppagocem/
+	- desde el navegador ingresar a localhost/ppagocem/html/index.php , esta es el sitio de llegada
+		desde aca pueden empezar a probar codigo en los distintos sitios
