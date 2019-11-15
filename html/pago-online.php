@@ -11,8 +11,8 @@ require_once('header.php');
         <div class="w-form">
           <form id="email-form" name="email-form" data-name="Email Form" class="iniciarsesion">
             <div class="columns-5 w-row">
-              <div class="w-col w-col-6"><label for="RUT">Ingrese RUT</label><input type="text" class="w-input" maxlength="256" name="RUT" data-name="RUT" id="rut2"><label for="Clave-2">Ingrese contraseña</label><input type="email" class="w-input" maxlength="256" name="Clave" data-name="Clave" id="clave2" required=""></div>
-              <div class="column-8 w-col w-col-6"><input type="submit" value="Aceptar" data-wait="Esperar" class="submit-button w-button"></div>
+              <div class="w-col w-col-6"><label for="RUT">Ingrese RUT</label><input type="text" class="text-field-2 w-input" placeholder="12345678-9" maxlength="10" id="rut"><label for="Clave-2">Ingrese contraseña</label><input type="password" class="text-field-2 w-input" placeholder="*********" maxlength="50" id="pass" required=""></div>
+              <div class="column-8 w-col w-col-6"><button type="button" value="Aceptar" data-wait="Esperar" onclick="entrar();" class="submit-button w-button">Entrar</div>
             </div>
           </form>
           <div class="w-form-done">

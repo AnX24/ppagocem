@@ -8,11 +8,11 @@ require_once('header.php');
           <h1 class="heading">Datos Cliente</h1>
           <div class="w-layout-grid grid-3">
             <div>Nombre:</div>
-            <div>Gabriel Veloso Rojas</div>
+            <div><label id="nombre"></div>
             <div>Rut:</div>
-            <div>19.189.982-k</div>
+            <div><label id="rut"></div>
             <div>Correo:</div>
-            <div>gabrielveloso56@gmail.com</div>
+            <div><label id="correo"></div>
           </div>
         </div>
       </div>
@@ -21,10 +21,23 @@ require_once('header.php');
         <div class="insidebox2">
           <h1 class="heading">Detalle de Pago</h1>
           <div class="w-layout-grid grid-3">
-            <div>01-cuota</div>
-            <div>$xxxxxxxxxxxx</div>
-            <div>02-cuota</div>
-            <div>$xxxxxxxxxxxx</div>
+          <script type="text/javascript">
+
+          $(document).ready(function () {
+            var table = $('#UserList').DataTable({
+              "iDisplayLength": 4,
+              select: {
+                  style: 'single'
+             }
+            });
+             table
+              .on('select', function (e, dt, type, indexes) {
+                     var bla = dt.row({selected: true}).data().yourField
+               })
+ 
+           });
+
+          </script>
             <div>Total a pagar:</div>
             <div>$xxxxxxxxxxxx</div>
           </div>
@@ -39,3 +52,12 @@ require_once('header.php');
     <?php
 require_once('footer.php');
 ?>
+
+<script type="text/javascript">
+
+document.getElementById('nombre').innerHTML = 'venti';
+document.getElementById('rut').innerHTML = '12345678-9';
+document.getElementById('correo').innerHTML = 'jperez@gmail.com';
+  
+
+</script>

@@ -11,7 +11,7 @@ require_once('header.php');
             <form class="form">
               <div class="columns-8 w-row">
                 <div class="w-clearfix w-col w-col-6"><label for="name" class="field-label">RUT</label></div>
-                <div class="w-col w-col-6"><input type="text" class="text-field-2 w-input" placeholder="12345678-9" maxlength="10" id="rut"></div>
+                <div class="w-col w-col-6"><input type="text" class="text-field-2 w-input" placeholder="Usuario" maxlength="10" id="user" required=""></div>
               </div>
               <div class="w-row">
                 <div class="w-clearfix w-col w-col-6"><label for="password" class="field-label-2">Password</label></div>
@@ -36,10 +36,10 @@ require_once('footer.php');
 function entrar(){
 
 
-  var primera = document.getElementById("rut").value;
+  var primera = document.getElementById("user").value;
   var segunda = document.getElementById("pass").value;
-            
-            // Displaying the value
+
+  
             alert(primera);
             alert(segunda);
   
