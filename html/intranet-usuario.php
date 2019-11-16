@@ -1,6 +1,9 @@
 <?php
 require_once('header.php');
 ?>
+<script src="../js/procesos/ingreso.js"></script>
+<script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <div class="principal">
     <div class="w-row">
       <div class="column-9 w-col w-col-2"><img src="images/man-user.png" alt="" class="image-2"></div>
@@ -16,7 +19,7 @@ require_once('header.php');
               <div class="w-row">
                 <div class="w-clearfix w-col w-col-6"><label for="password" class="field-label-2">Password</label></div>
                 <div class="w-col w-col-6"><input type="password" class="text-field-2 w-input" placeholder="*********" maxlength="50" id="pass" required=""></div>
-              </div><button type="button" onclick="entrar();">Entrar</button></form>
+              </div><button type="button" id="continuarUS" onclick="entrar('user','pass');">Entrar</button></form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
@@ -30,20 +33,3 @@ require_once('header.php');
   <?php
 require_once('footer.php');
 ?>
-
-<script type="text/javascript">
-
-function entrar(){
-
-
-  var primera = document.getElementById("user").value;
-  var segunda = document.getElementById("pass").value;
-
-  
-            alert(primera);
-            alert(segunda);
-  
-}
-  
-
-</script>

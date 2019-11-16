@@ -8,7 +8,7 @@ require_once('header.php');
       </div>
       <div class="homec2 w-col w-col-6">
         <div class="insidenav"><a href="pago-online.php" class="navlink">Pago en linea</a></div>
-        <div class="insidenav"><a href="intranet-admin.php" class="navlink">Intranet</a></div>
+        <div class="insidenav"><a href="intranet-usuario.php" class="navlink">Intranet</a></div>
       </div>
     </div>
   </div>
