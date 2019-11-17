@@ -1,7 +1,7 @@
 <?php
 require_once('header.php');
 ?>
-<script src="../js/procesos/ingreso.js"></script>
+<script type="module" src="../js/procesos/ingreso.js"></script>
 <script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
 <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <div class="principal">
@@ -19,14 +19,14 @@ require_once('header.php');
               <div class="w-row">
                 <div class="w-clearfix w-col w-col-6"><label for="password" class="field-label-2">Password</label></div>
                 <div class="w-col w-col-6"><input type="password" class="text-field-2 w-input" placeholder="*********" maxlength="50" id="pass" required=""></div>
-              </div><button type="button" id="continuarUS" onclick="entrar('user','pass');">Entrar</button></form>
+              </div><button type="button" id="continuarUS" >Entrar</button></form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
             <div class="w-form-fail">
               <div>Oops! Something went wrong while submitting the form.</div>
             </div>
-          </div><a href="#" class="rceover">Recuperar Contraseña</a></div>
+          </div><a href="recuperar-clave.php" class="rceover">Recuperar Contraseña</a></div>
       </div>
     </div>
   </div>

@@ -1,6 +1,8 @@
 <?php
 require_once('header.php');
 ?>
+<script src="../js/procesos/movimiento.js"></script>
+<script src="../js/procesos/escritores.js"></script>
   <div class="principal">
     <div class="menusuuario w-row">
       <div class="pagoc1 w-col w-col-6 w-col-stack">
@@ -10,7 +12,7 @@ require_once('header.php');
             <div>Nombre:</div>
             <div><label id="nombre"></div>
             <div>Rut:</div>
-            <div><label id="rut"></div>
+            <div><label id="rutcl"></div>
             <div>Correo:</div>
             <div><label id="correo"></div>
           </div>
@@ -23,19 +25,19 @@ require_once('header.php');
           <div class="w-layout-grid grid-3">
           <script type="text/javascript">
 
-          $(document).ready(function () {
-            var table = $('#UserList').DataTable({
-              "iDisplayLength": 4,
-              select: {
-                  style: 'single'
-             }
+            $(document).ready(function () {
+              var table = $('#UserList').DataTable({
+                "iDisplayLength": 4,
+                select: {
+                    style: 'single'
+              }
+              });
+              table
+                .on('select', function (e, dt, type, indexes) {
+                      var bla = dt.row({selected: true}).data().yourField
+                })
+  
             });
-             table
-              .on('select', function (e, dt, type, indexes) {
-                     var bla = dt.row({selected: true}).data().yourField
-               })
- 
-           });
 
           </script>
             <div>Total a pagar:</div>
@@ -52,12 +54,3 @@ require_once('header.php');
     <?php
 require_once('footer.php');
 ?>
-
-<script type="text/javascript">
-
-document.getElementById('nombre').innerHTML = 'venti';
-document.getElementById('rut').innerHTML = '12345678-9';
-document.getElementById('correo').innerHTML = 'jperez@gmail.com';
-  
-
-</script>

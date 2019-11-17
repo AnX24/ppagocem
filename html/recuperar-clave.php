@@ -1,6 +1,7 @@
 <?php
 require_once('header.php');
 ?>
+<script type="module" src="../js/procesos/recover.js"></script>
   <div class="principal">
     <div class="w-row">
       <div class="column-9 w-col w-col-2"><img src="images/man-user.png" alt="" class="image-2"></div>
@@ -12,7 +13,7 @@ require_once('header.php');
               <div class="w-row">
                 <div class="w-clearfix w-col w-col-6"><label for="name" class="field-label">Correo</label></div>
                 <div class="w-col w-col-6"><input type="text" class="text-field w-input" maxlength="256" name="email1" data-name="email1" id="email1"></div>
-              </div><input type="submit" value="Recuperar Contraseña" data-wait="Esperar" class="w-button"></form>
+              </div><button type="button" id="recov" data-wait="Esperar" class="w-button">Recuperar Contraseña</form>
             <div class="w-form-done">
               <div>Thank you! Your submission has been received!</div>
             </div>
